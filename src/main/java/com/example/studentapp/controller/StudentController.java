@@ -3,9 +3,10 @@ package com.example.studentapp.controller;
 import com.example.studentapp.model.Student;
 import com.example.studentapp.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-        import java.util.List;
+import java.util.List;
 
 @RestController
 @RequestMapping("/students")
@@ -41,4 +42,6 @@ public class StudentController {
         studentService.deleteStudent(id);
     }
 }
+
+
 
